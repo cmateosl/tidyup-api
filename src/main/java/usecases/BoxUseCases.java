@@ -11,6 +11,7 @@ public class BoxUseCases implements BoxInputPort {
         this.boxOutputPort = boxOutputPort;
     }
 
+    @Override
     public Box registerBox() {
         final String identifier = boxOutputPort.createBox();
         return new Box(identifier);
